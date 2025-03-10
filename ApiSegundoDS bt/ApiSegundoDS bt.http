@@ -1,0 +1,6 @@
+@ApiSegundoDS_bt_HostAddress = http://localhost:5048
+
+GET {{ApiSegundoDS_bt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
