@@ -5,5 +5,8 @@
         public int Id { get; set; }
         public string? nome { get; set; }
         public professor professor { get; set; }
+        public string CNPJ { get; set; }
+        public Aluno? aluno { get; set; }
+        
     }
 }
