@@ -4,8 +4,9 @@ namespace ApiSegundoDS_bt.models
 {
     public class Aluno
     {
-        string nome = "";
+
         public int Id { get; set; }
+
         public string? nome { get; set; }
         public string? rma { get; set; }
         public string? pai { get; set; }
@@ -13,9 +14,7 @@ namespace ApiSegundoDS_bt.models
         public int? matricula { get; set; }
         public DateTime datanascimento { get; set; }
         public int escolaid { get; set; }
-
-        public escola escola { get; set; }
-        public professor professor { get; set; }
+        public int professorid { get; set; }
 
     }
 }

@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ApiSegundoDS_bt.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ApiSegundoDS_btContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ApiSegundoDS_btContext") ?? throw new InvalidOperationException("Connection string 'ApiSegundoDS_btContext' not found.")));
 
 // Add services to the container.
 
